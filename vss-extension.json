@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "aws-vsts-tools",
-    "version": "1.0.21",
+    "version": "1.0.23",
     "name": "AWS Tools for Microsoft Visual Studio Team Services",
     "scopes": [
         "vso.build",
@@ -74,6 +74,9 @@
         {
             "path": "images",
             "addressable": true
+        },
+        {
+            "path": "Tasks/AWSBash"
         },
         {
             "path": "Tasks/AWSCLI"
@@ -217,6 +220,17 @@
                     }
                 ],
                 "helpMarkDown": "<a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html?icmpid=docs_iam_console\" target=\"_blank\"><b>Learn More</b></a>"
+            }
+        },
+        {
+            "id": "AWSBash",
+            "description": "Run a Bash script against an AWS connection",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "Tasks/AWSBash"
             }
         },
         {

@@ -47,7 +47,6 @@
         "rimraf": "^2.5.4",
         "semver": "^5.4.1",
         "sync-request": "^4.1.0",
-        "tfx-cli": "^0.4.9",
         "ts-loader": "^2.2.2",
         "tslint": "^5.5.0",
         "typescript": "^2.4.1",
