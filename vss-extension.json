@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "aws-vsts-tools",
-    "version": "1.0.23",
+    "version": "1.0.0",
     "name": "AWS Tools for Microsoft Visual Studio Team Services",
     "scopes": [
         "vso.build",
@@ -13,14 +13,6 @@
     "public": false,
     "icons": {
         "default": "images/logo.png"
-    },
-    "content": {
-        "details": {
-            "path": "README.md"
-        },
-        "license": {
-            "path": "LICENSE"
-        }
     },
     "targets": [
         {
@@ -65,11 +57,6 @@
         "theme": "light"
     },
     "galleryFlags": [],
-    "screenshots": [
-        {
-            "path": "images/screenshot.png"
-        }
-    ],
     "files": [
         {
             "path": "images",
@@ -77,57 +64,6 @@
         },
         {
             "path": "Tasks/AWSBash"
-        },
-        {
-            "path": "Tasks/AWSCLI"
-        },
-        {
-            "path": "Tasks/AWSPowerShellModuleScript"
-        },
-        {
-            "path": "Tasks/BeanstalkCreateApplicationVersion"
-        },
-        {
-            "path": "Tasks/BeanstalkDeployApplication"
-        },
-        {
-            "path": "Tasks/CloudFormationCreateOrUpdateStack"
-        },
-        {
-            "path": "Tasks/CloudFormationDeleteStack"
-        },
-        {
-            "path": "Tasks/CloudFormationExecuteChangeSet"
-        },
-        {
-            "path": "Tasks/CodeDeployDeployApplication"
-        },
-        {
-            "path": "Tasks/ECRPushImage"
-        },
-        {
-            "path": "Tasks/LambdaDeployFunction"
-        },
-        {
-            "path": "Tasks/LambdaInvokeFunction"
-        },
-        {
-            "path": "Tasks/LambdaNETCoreDeploy"
-        },
-        {
-            "path": "Tasks/S3Download"
-        },
-        {
-            "path": "Tasks/S3Upload"
-        },
-        {
-            "path": "Tasks/SendMessage"
-        },
-        {
-            "path": "Tasks/SystemsManagerGetParameter"
-        },
-        {
-            "path": "Tasks/SystemsManagerRunCommand"
         }
     ],
     "categories": [
@@ -231,193 +167,6 @@
             ],
             "properties": {
                 "name": "Tasks/AWSBash"
-            }
-        },
-        {
-            "id": "AWSCLI",
-            "description": "Run an AWS CLI command against an AWS connection",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/AWSCLI"
-            }
-        },
-        {
-            "id": "AWSPowerShellModuleScript",
-            "description": "Run a PowerShell script that uses cmdlets from the AWS Tools for Windows PowerShell module.",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/AWSPowerShellModuleScript"
-            }
-        },
-        {
-            "id": "BeanstalkCreateApplicationVersion",
-            "description": "Create a new application version for later deployment to AWS Elastic Beanstalk",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/BeanstalkCreateApplicationVersion"
-            }
-        },
-        {
-            "id": "BeanstalkDeployApplication",
-            "description": "Deploy an application to AWS Elastic Beanstalk",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/BeanstalkDeployApplication"
-            }
-        },
-        {
-            "id": "CloudFormationCreateOrUpdateStack",
-            "description": "Create or update an AWS CloudFormation stack",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/CloudFormationCreateOrUpdateStack"
-            }
-        },
-        {
-            "id": "CloudFormationDeleteStack",
-            "description": "Deletes an AWS CloudFormation stack",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/CloudFormationDeleteStack"
-            }
-        },
-        {
-            "id": "CloudFormationExecuteChangeSet",
-            "description": "Executes an AWS CloudFormation change set",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/CloudFormationExecuteChangeSet"
-            }
-        },
-        {
-            "id": "CodeDeployDeployApplication",
-            "description": "Deploy an application to Amazon EC2 instances using AWS CodeDeploy",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/CodeDeployDeployApplication"
-            }
-        },
-        {
-            "id": "ECRPushImage",
-            "description": "Push a local Docker image to Elastic Container Registry",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/ECRPushImage"
-            }
-        },
-        {
-            "id": "LambdaDeployFunction",
-            "description": "General purpose deployment for AWS Lambda functions",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/LambdaDeployFunction"
-            }
-        },
-        {
-            "id": "LambdaInvokeFunction",
-            "description": "Invokes an AWS Lambda function with a JSON payload",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/LambdaInvokeFunction"
-            }
-        },
-        {
-            "id": "LambdaNETCoreDeploy",
-            "description": "Build and deploy a .NET Core AWS Lambda function",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/LambdaNETCoreDeploy"
-            }
-        },
-        {
-            "id": "S3Download",
-            "description": "Download files from an Amazon Simple Storage Service (S3) Bucket",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/S3Download"
-            }
-        },
-        {
-            "id": "S3Upload",
-            "description": "Upload files to an Amazon Simple Storage Service (S3) Bucket",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/S3Upload"
-            }
-        },
-        {
-            "id": "SendMessage",
-            "description": "Sends a message to an SNS topic or SQS queue",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/SendMessage"
-            }
-        },
-        {
-            "id": "SystemsManagerGetParameter",
-            "description": "Read one or more Systems Manager Parameter Store values into build variables",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/SystemsManagerGetParameter"
-            }
-        },
-        {
-            "id": "SystemsManagerRunCommand",
-            "description": "Run a command remotely on a fleet of EC2 instances and/or on-premise machines",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "Tasks/SystemsManagerRunCommand"
             }
         }
     ]

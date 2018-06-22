@@ -1,23 +1,6 @@
 {
     "tasks": [
-        "AWSBash",
-        "AWSCLI",
-        "AWSPowerShellModuleScript",
-        "BeanstalkCreateApplicationVersion",
-        "BeanstalkDeployApplication",
-        "CloudFormationCreateOrUpdateStack",
-        "CloudFormationDeleteStack",
-        "CloudFormationExecuteChangeSet",
-        "CodeDeployDeployApplication",
-        "ECRPushImage",
-        "LambdaDeployFunction",
-        "LambdaInvokeFunction",
-        "LambdaNETCoreDeploy",
-        "S3Download",
-        "S3Upload",
-        "SendMessage",
-        "SystemsManagerGetParameter",
-        "SystemsManagerRunCommand"
+        "AWSBash"
     ],
     "taskResources": [
         "*.ps1",
