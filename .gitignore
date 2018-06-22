@@ -5,6 +5,9 @@
 **/_build/
 **/_package/
 
+Tasks/**/*.js
+**/package-lock.json
+
 **/*.log
 **/*.map
 **/*.taskkey
